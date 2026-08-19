@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+      font-family: "Oswald", sans-serif;
+}
+
+body{
+    color: rgb(22, 23, 24);
+}
+li{
+    list-style: none;
+}
+/* Hero Section Begins */
+.hero-section{
+    height: 100vh;
+    background-image: url('2afb7a77c96f817dd8a3825515302af08aa03395-5842x4664.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 1rem 0;
+
+}
+header{
+    height: 50px;
+    background-color: #FAFAF7;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+}
+header > :nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+header > :nth-child(2){
+text-transform: uppercase;
+font-weight: bold;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - (50px + 1rem));
+    justify-content: center;
+    row-gap: 1.5rem;
+    text-align: center;
+     color: white;
+}
+.hero-container button{
+    width: fit-content;
+    display: block;
+    margin-inline: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3rem 0.7rem;
+}
+/* Hero Section Ends */
+/* Section 1 begins  */
+.section1{
+    text-align: center;
+    padding-inline: 1.5rem;
+    margin-block: 5rem;
+}
+.section1 h2{
+    font-weight: 300;
+    padding-bottom: 0.5rem;
+}
+.section1 button{
+    margin-top: 1.2rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1.2px solid rgb(22, 23, 24);
+   cursor: pointer;
+}
+.fa-arrow-right-long{
+   transition: all 0.3s ease-in;
+}
+.section1 button:hover .fa-arrow-right-long{
+    padding-left: 10px;
+}
+/* Section 1 Ends */
+
+/* Section 2 Begins  */
+.section2 h2{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.section2 ul{
+    display: flex;
+    cursor: pointer;
+}
+
+.section2 ul li{
+    list-style: none;
+}
+.Goods-contsainer{
+   padding: 0.6rem;
+   background-color: rgb(245, 245, 240);
+   column-gap: 0.4rem;
+   justify-content: center;
+   margin-bottom: 1.7rem;
+   width: fit-content;
+   margin-inline: auto;
+   border-radius: 10px;
+   padding-inline: 1rem; 
+}
+.Goods-contsainer li:first-child{
+    background-color: rgb(24, 23, 22);
+    padding: 0 0.4rem;
+    border-radius: 0.2rem;
+    color: #FAFAF7;
+}
+
+.actual-goods li{
+    padding-block: 1.2rem;
+    background-color: rgb(245, 245, 240);
+    flex: 0 0 90%;
+      border-radius: 5px;
+}
+.actual-goods{
+    column-gap: 1rem;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+.actual-goods::-webkit-scrollbar{
+    display: none;
+}
+.actual-goods li img{
+    object-fit: cover;
+    width: 100%;
+}
+.actual-goods li button{
+    display: block;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    border: 1px solid black;
+    background-color: inherit;
+    border-radius: 2rem;
+    margin-block:2rem 0.5rem ;
+    font-family: monospace;
+}
+div.monospace-container > div{
+    font-family: monospace;
+    margin-bottom: 0.3rem;
+    text-align: center;
+}
+div.monospace-container > div:nth-child(1), div.monospace-container > div:nth-child(3){
+    font-weight: 100;
+    color: gray;
+    font-size: 10px;
+}
+div.monospace-container > div:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Section 2 Ends */
+
+
+/* Section 3 Begins  */
+aside.section3{
+    margin-top: 4rem;
+    padding-inline: 0.5rem;
+}
+aside.section3 h2{
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+}
+aside.section3 h3{
+    font-weight: 400;
+    padding: 0.4rem 0;
+}
+aside.section3 p{
+    padding-bottom: 0.6rem;
+}
+aside.section3 ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+aside.section3 ul li img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 5px;
+}
+aside.section3 ul li  button, section.section-5 button{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(22, 23, 24);
+    cursor: pointer;
+}
+aside.section3 ul li  button:hover, section.section-5 button:hover .fa-arrow-right-long{
+    transform: translateX(10px);
+}
+/* Section 3 Ends */
+/* Section 4 begins  */
+section.section-4{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    margin-top: 4rem;
+    padding-inline: 0.5rem;
+}
+.section-4-item img{
+width: 100%;
+aspect-ratio: 8 / 6;
+object-fit: cover;
+border-radius: 10px;
+}
+.monospace, .section-4-item button{
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: 200;
+    color: gray;
+}
+.section-4-item p{
+    margin-block: 0.5rem;
+}
+.section-4-item button{
+       border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(22, 23, 24);
+    cursor: pointer;
+}
+.section-4-item button:hover .fa-arrow-right-long{
+    padding-left: 10px;
+}
+/* Section 4 ends */
+/* Section 5 Begins */
+/* Section 5 Ends */
+section.section-5{
+    background-color: #F1EFE7;
+    margin-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: 0.5rem;
+}
+section.section-5 h2{
+    font-weight: 400;
+}
+section.section-5 button{
+    margin-bottom: 2rem;
+}
+.section-5-container{
+    display: flex;
+    row-gap: 2rem;
+    flex-direction: column;
+}
+.section-5-item img{
+    width: 100%;
+    aspect-ratio: 7 / 6;
+    object-fit: cover;
+    border-radius: 10px;
+}
+div.section-5-item .release-date{
+   font-size: 12px;
+   padding-block: 0.2rem;
+}
+div.section-5-item .release-date span{
+    color: gray;
+    padding-left: 1rem;
+}
+.more-info{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+    align-items: flex-end;
+}
+.more-info span:first-child{
+    font-size: 8px;
+    color:gray;
+}
+/* Section 5 ends */
+/* Section 6 begins */
+.section-6{
+    background-color: #E7E5D7;
+    padding-block: 4rem;
+    border-top: 1px dotted rgb(22, 23, 24);
+}
+.section-6-container{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    max-width: 300px;
+  
+}
+.section-6-container div{
+    margin-bottom: 1.5rem;
+}
+.section-6-container input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+      transition: all 0.5s linear;
+}
+form.firstEmail{
+     border-bottom: 1px solid black;
+     width: fit-content;
+     margin-inline: auto;
+}
+.value{
+  cursor: pointer;
+ transition: all 0.5s linear;
+}
+.value:hover{
+    color: gray;
+}
+
+/* Section 6 Ends */
+/* Footer Section begins */
+footer{
+    background-image: url('/0c61e17cbcb40df3b25df67e5c41ee5a8430ef74-2880x1333.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0.5rem 0;
+}
+footer .shop-discovery{
+    display: flex;
+}
+footer .shop-discovery div{
+    flex: 1 1 0;
+    margin-bottom: 2rem;
+}
+footer .shop-discovery div ul{
+    margin-bottom: 2rem;
+}
+.visit-us{
+    display: flex;
+}
+ .visit-us ul{
+    flex: 1 1 0;
+ }
+ .contact-us{
+    margin-top: 2rem;
+ }
+  .contact-us input{
+    width: 100%;
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 0.5rem;
+    
+  }
+  
+    
+    .contact-us form i.fa-arrow-right-long{
+      float: right;
+      transform: translateY(-1.6rem);
+    }
+  div.social{
+    margin-top: 0.5rem;
+  }
+  ul.socialul{
+    margin-bottom: 2rem;
+  }
+  ul.privacy{
+    display: flex;
+    font-size: 8px;
+    justify-content: center;
+    column-gap: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+/* Footer Section Ends */
